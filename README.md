@@ -6,7 +6,7 @@ A simple ESP32-C3 project to control 02 LED strips via a web interface and a phy
 <img width="270" src="https://github.com/user-attachments/assets/036d4241-7682-4798-a40a-43510beda6df" />
 
 ### The Web interface
-<img width="500" src="https://github.com/user-attachments/assets/abbf2eac-18d8-4785-bb05-ab84340a76b3" />
+<img width="500" src="https://github.com/user-attachments/assets/3b3a0bce-a33f-4288-aa44-b7863287e0ec" />
 
 ### The PCB
 <img width="500" src="https://github.com/user-attachments/assets/9c82cf47-de94-4f1c-9925-8533e8d0968f" />
