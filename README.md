@@ -6,7 +6,7 @@ A simple ESP32-C3 project to control 02 LED strips via a web interface and a phy
 <img width="270" src="https://github.com/user-attachments/assets/036d4241-7682-4798-a40a-43510beda6df" />
 
 ### The Web interface
-<img width="500" src="https://github.com/user-attachments/assets/c1ea3701-425c-4ecc-b134-155f1f5847f4" />
+<img width="500" src="https://github.com/user-attachments/assets/abbf2eac-18d8-4785-bb05-ab84340a76b3" />
 
 ### The PCB
 <img width="500" src="https://github.com/user-attachments/assets/9c82cf47-de94-4f1c-9925-8533e8d0968f" />
@@ -25,6 +25,8 @@ Additionally, the LED can be controlled via a simple API, making it easy to inte
 * `POST` `http://192.168.1.190/turn-on-2`
 * `POST` `http://192.168.1.190/turn-off-1`
 * `POST` `http://192.168.1.190/turn-off-2`
+* `POST` `http://192.168.1.190/turn-on-all`
+* `POST` `http://192.168.1.190/turn-off-all`
 
 NOTE: Change `http://192.168.1.190` to your actual device IP. Assign a Static IP to your device in your home router.
 
@@ -63,17 +65,9 @@ NOTE: Change `http://192.168.1.190` to your actual device IP. Assign a Static IP
 Platform IO is a plugin for Microsoft Virtual Studio Code. It is a more robust IDE compared to official Arduino IDE. It also allows us to easily create our own private libraries and use a more object oriented code.
 
 ## About the code
-The PINs can be customized in the `main.cpp`
+The PINs can be customized in the `Config/src/Config.h`
 
 ```c++
-#include <Arduino.h>
-#include <NoDelay.h>
-#include <HttpServer.h>
-#include <WifiHandler.h>
-#include <LedRelay.h>
-#include <PushButton.h>
-#include "types.h"
-
 #define RELAY_PIN_1 1
 #define RELAY_PIN_2 0
 #define LED_PIN_1 3
