@@ -27,6 +27,8 @@ private:
     void toggleLed(AsyncWebServerRequest *request, bool first);
     void turnOnLed(AsyncWebServerRequest *request, bool first);
     void turnOffLed(AsyncWebServerRequest *request, bool first);
+    void turnAllOnLed(AsyncWebServerRequest *request);
+    void turnAllOffLed(AsyncWebServerRequest *request);
 };
 
 #endif
